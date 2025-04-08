@@ -14,6 +14,9 @@ while len(guessed_state) < 50:
     ans_state = screen.textinput(title=f"{len(guessed_state)}/50 correct", prompt="What the state's name?")
     print(ans_state)
 
+    if ans_state == "Exit":
+        break
+
 
     if ans_state in all_state:
         guessed_state.append(ans_state)
